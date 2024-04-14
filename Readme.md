@@ -39,12 +39,12 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
         Therefore, you will have four plots for each model: loss and accuracy curves for training and test datasets, respectively.
     
         
-![LeNet_Accuracy_plot](../img/LeNet_accuracy_plot.png)
-![LeNet_loss_plot](../img/LeNet_loss_plot.png)
+![LeNet_Accuracy_plot](img/LeNet_accuracy_plot.png)
+![LeNet_loss_plot](img/LeNet_loss_plot.png)
         
         
-![CustomMLP_Accuracy_plot](../img/CustomMLP_accuracy_plot.png)
-![CustomMLP_loss_plot](../img/CustomMLP_loss_plot.png)
+![CustomMLP_Accuracy_plot](img/CustomMLP_accuracy_plot.png)
+![CustomMLP_loss_plot](img/CustomMLP_loss_plot.png)
         
     5. (Report) Compare the predictive performances of LeNet-5 and your custom MLP. 
         Also, make sure that the accuracy of LeNet-5 (your implementation) is similar to the known accuracy. 
@@ -68,5 +68,5 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
         
         
         Test Loss: 0.0006, Test Acc: 0.9733
-![LeNet_regularization_Accuracy_plot](../img/LeNet_regularization_accuracy_plot.png)
-![LeNet_regularization_Loss_plot](../img/LeNet_regularization_loss_plot.png)
+![LeNet_regularization_Accuracy_plot](img/LeNet_regularization_accuracy_plot.png)
+![LeNet_regularization_Loss_plot](img/LeNet_regularization_loss_plot.png)
