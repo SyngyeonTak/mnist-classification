@@ -28,7 +28,6 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
             Linear layer 1: (in_features * out_features) + out_features = (16*5*5 * 120) + 120 = 48120
             Linear layer 2: (in_features * out_features) + out_features = (120 * 84) + 84 = 10164
             Linear layer 3: (in_features * out_features) + out_features = (84 * 10) + 10 = 850
-
             Total parameters for LeNet-5 = 156 + 2416 + 48120 + 10164 + 850 = 61606
         
         # Custom MLP
