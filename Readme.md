@@ -14,14 +14,12 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
 
     3. Write `main.py` to train your models, LeNet-5 and custom MLP. Here, you should monitor the training process. 
     To do so, you need some statistics such as average loss values and accuracy at the end of each epoch.
-    
-    Reports
+## LeNet and CustomMLP model parameter number
     2. (Report) Implement LeNet-5 and your custom MLP models in `model.py`. 
         Some instructions are given in the file as comments. Note that your custom MLP 
         model should have about the same number of model parameters with LeNet-5. 
         Describe the number of model parameters of LeNet-5 and your custom MLP and how to compute them in your report.
         
-        ![Report]
         # LeNet-5
             Conv2d layer 1: (input_channels * output_channels * kernel_height * kernel_width) + output_channels = (1 * 6 * 5 * 5) + 6 = 156
             Conv2d layer 2: (input_channels * output_channels * kernel_height * kernel_width) + output_channels = (6 * 16 * 5 * 5) + 16 = 2416
@@ -34,28 +32,28 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
             First Linear layer: (in_features * out_features) + out_features = (1024 * 59) + 59 = 60515
             Second Linear layer: (in_features * out_features) + out_features = (59 * 10) + 10 = 600
             Total parameters for Custom MLP = 60515 + 600 = 61115
-    
+            
+## LeNet and CustomMLP model Accurarcy each
     4. (Report) Plot above statistics, average loss value and accuracy, for training and testing. 
         It is fine to use the test dataset as a validation dataset. 
         Therefore, you will have four plots for each model: loss and accuracy curves for training and test datasets, respectively.
+    
         
-        ![Report]
-        
-        ![LeNet_Accuracy_plot](../img/LeNet_accuracy_plot.png)
-        ![LeNet_loss_plot](../img/LeNet_loss_plot.png)
+![LeNet_Accuracy_plot](../img/LeNet_accuracy_plot.png)
+![LeNet_loss_plot](../img/LeNet_loss_plot.png)
         
         
-        ![CustomMLP_Accuracy_plot](../img/CustomMLP_accuracy_plot.png)
-        ![CustomMLP_loss_plot](../img/CustomMLP_loss_plot.png)
+![CustomMLP_Accuracy_plot](../img/CustomMLP_accuracy_plot.png)
+![CustomMLP_loss_plot](../img/CustomMLP_loss_plot.png)
         
     5. (Report) Compare the predictive performances of LeNet-5 and your custom MLP. 
         Also, make sure that the accuracy of LeNet-5 (your implementation) is similar to the known accuracy. 
         
-        ## LeNet and CustomMLP model Accurarcy each
-        LeNet-5 Test Accruacy: Test Acc: 0.9901
-        CustomMLP Test Accruacy: Test Acc: 0.9789
         
+        LeNet-5 Test Accuracy: 0.9901
+        CustomMLP Test Accuracy: 0.9789
         
+## Lenet_regularization model performance
     6. (Report) Employ at least more than two regularization techniques to improve LeNet-5 model. 
         You can use whatever techniques if you think they may be helpful to improve the performance. 
         Verify that they actually help improve the performance. 
@@ -68,7 +66,7 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
         Kindly compare the two models performance below
         
         
-        ## Lenet_regularization model performance
+        
         Test Loss: 0.0006, Test Acc: 0.9733
-        ![LeNet_regularization_Accuracy_plot](../img/LeNet_regularization_accuracy_plot.png)
-        ![LeNet_regularization_Loss_plot](../img/LeNet_regularization_loss_plot.png)
+![LeNet_regularization_Accuracy_plot](../img/LeNet_regularization_accuracy_plot.png)
+![LeNet_regularization_Loss_plot](../img/LeNet_regularization_loss_plot.png)
