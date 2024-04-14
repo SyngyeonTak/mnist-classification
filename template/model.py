@@ -57,9 +57,9 @@ class CustomMLP(nn.Module):
         super(CustomMLP, self).__init__()
         self.classifier = nn.Sequential(
             nn.Flatten(),
-            nn.Linear(in_features=1024, out_features=77),
+            nn.Linear(in_features=1024, out_features=59),
             nn.ReLU(),
-            nn.Linear(in_features=77, out_features=10) 
+            nn.Linear(in_features=59, out_features=10) 
         )
 
     def forward(self, img):

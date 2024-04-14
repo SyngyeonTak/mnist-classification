@@ -23,17 +23,18 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
         
         ![Report]
         # LeNet-5
-            Conv2d layer: (input_channels * output_channels * kernel_height * kernel_width) + output_channels = (1 * 6 * 5 * 5) + 6 = 156
-            Conv2d layer: (input_channels * output_channels * kernel_height * kernel_width) + output_channels = (6 * 16 * 5 * 5) + 16 = 2416
-            Linear layer: (in_features * out_features) + out_features = (1644 * 120) + 120 = 48120
-            Linear layer: (in_features * out_features) + out_features = (120 * 84) + 84 = 10164
-            Linear layer: (in_features * out_features) + out_features = (84 * 10) + 10 = 850
+            Conv2d layer 1: (input_channels * output_channels * kernel_height * kernel_width) + output_channels = (1 * 6 * 5 * 5) + 6 = 156
+            Conv2d layer 2: (input_channels * output_channels * kernel_height * kernel_width) + output_channels = (6 * 16 * 5 * 5) + 16 = 2416
+            Linear layer 1: (in_features * out_features) + out_features = (16*5*5 * 120) + 120 = 48120
+            Linear layer 2: (in_features * out_features) + out_features = (120 * 84) + 84 = 10164
+            Linear layer 3: (in_features * out_features) + out_features = (84 * 10) + 10 = 850
+
             Total parameters for LeNet-5 = 156 + 2416 + 48120 + 10164 + 850 = 61606
         
         # Custom MLP
-            First Linear layer: (in_features * out_features) + out_features = (784 * 77) + 77 = 60313
-            Second Linear layer: (in_features * out_features) + out_features = (77 * 10) + 10 = 780
-            Total parameters for CustomMLP = 60313 + 780 = 61093
+            First Linear layer: (in_features * out_features) + out_features = (1024 * 59) + 59 = 60515
+            Second Linear layer: (in_features * out_features) + out_features = (59 * 10) + 10 = 600
+            Total parameters for Custom MLP = 60515 + 600 = 61115
     
     4. (Report) Plot above statistics, average loss value and accuracy, for training and testing. 
         It is fine to use the test dataset as a validation dataset. 
