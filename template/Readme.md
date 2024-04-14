@@ -41,18 +41,18 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
         
         ![Report]
         
-        ![LeNet_Accuracy_plot] (../img/LeNet_accuracy_plot.png)
-        ![LeNet_loss_plot] (../img/LeNet_loss_plot.png)
+        ![LeNet_Accuracy_plot](../img/LeNet_accuracy_plot.png)
+        ![LeNet_loss_plot](../img/LeNet_loss_plot.png)
         
         
-        ![CustomMLP_Accuracy_plot] (../img/CustomMLP_accuracy_plot.png)
-        ![CustomMLP_loss_plot] (../img/CustomMLP_loss_plot.png)
+        ![CustomMLP_Accuracy_plot](../img/CustomMLP_accuracy_plot.png)
+        ![CustomMLP_loss_plot](../img/CustomMLP_loss_plot.png)
         
     5. (Report) Compare the predictive performances of LeNet-5 and your custom MLP. 
         Also, make sure that the accuracy of LeNet-5 (your implementation) is similar to the known accuracy. 
         
-        LeNet-5 Test Accruacy: Test Acc: 0.9907
-        CustomMLP Test Accruacy: Test Acc: 0.9792
+        LeNet-5 Test Accruacy: Test Acc: 0.9901
+        CustomMLP Test Accruacy: Test Acc: 0.9789
         
         
     6. (Report) Employ at least more than two regularization techniques to improve LeNet-5 model. 
@@ -66,9 +66,9 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
         The data has been augumented with the 
         Kindly compare the two models performance below
         
-        ![LeNet_Accuracy_plot] (../img/LeNet_accuracy_plot.png)
-        ![LeNet_loss_plot] (../img/LeNet_loss_plot.png)
+        ![LeNet_Accuracy_plot](../img/LeNet_accuracy_plot.png)
+        ![LeNet_loss_plot](../img/LeNet_loss_plot.png)
         
-        Test Loss: 0.0006, Test Acc: 0.9731
-        ![LeNet_regularization_Accuracy_plot] (../img/LeNet_regularization_accuracy_plot.png)
-        ![LeNet_regularization_Loss_plot] (../img/LeNet_regularization_loss_plot.png)
+        Test Loss: 0.0006, Test Acc: 0.9733
+        ![LeNet_regularization_Accuracy_plot](../img/LeNet_regularization_accuracy_plot.png)
+        ![LeNet_regularization_Loss_plot](../img/LeNet_regularization_loss_plot.png)

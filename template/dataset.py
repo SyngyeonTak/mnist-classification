@@ -35,7 +35,6 @@ class MNIST(Dataset):
         if apply_augumentation:
             self.transform = transforms.Compose([
                 transforms.RandomHorizontalFlip(),     # regularization 1  - data augumentation
-                #transforms.RandomAffine(degrees=20, translate=(0.1,0.1), scale=(0.9, 1.1)),
                 transforms.Resize(32),
                 transforms.ToTensor(),                   
                 transforms.Normalize((0.1307,), (0.3081,)) 

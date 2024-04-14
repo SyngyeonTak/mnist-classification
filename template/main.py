@@ -66,7 +66,7 @@ def train(model, trn_loader, device, criterion, optimizer, epoch, num_epochs):
             # The first element is a tensor containing the maximum values
             # The second element is a tensor containing the indices of the maximum values (we are interested in this)
 
-        if batch_idx % 50 == 0:  # Print every 500 mini-batches
+        if batch_idx % 60 == 0:  # Print every 500 mini-batches
             print(f"Epoch [{epoch}/{num_epochs}], Batch [{batch_idx}/{len(trn_loader)}], Loss: {loss.item():.4f}")
 
         correct += (predicted == targets).sum().item()
@@ -169,8 +169,8 @@ def plot_performance(train_loss_history, train_acc_history, test_loss_history, t
     plt.title(f'{model_name} Loss')
     plt.legend()
     plt.grid(True)
-    plt.show()
     plt.savefig(f'../img/{model_name}_loss_plot.png')
+    plt.show()
 
     # Plot training and testing accuracy curves
     plt.figure(figsize=(10, 5))
@@ -181,8 +181,9 @@ def plot_performance(train_loss_history, train_acc_history, test_loss_history, t
     plt.title(f'{model_name} Accuracy')
     plt.legend()
     plt.grid(True)
-    plt.show()
     plt.savefig(f'../img/{model_name}_accuracy_plot.png')
+    plt.show()
+    
 
 def main():
     """ Main function
@@ -198,11 +199,6 @@ def main():
 
     # write your codes here
     # 
-
-    # Instantiate Dataset objects for training and test datasets
-    #train_dataset = datasets.MNIST(root='../data/train.tar', train=True, transform=transform, download=True)
-    #test_dataset = datasets.MNIST(root='../data/test.tar', train=False, transform=transform, download=True)
-
     current_directory = os.getcwd()
     print("Current directory:", current_directory)
 
@@ -211,7 +207,6 @@ def main():
     
 
     train_aug_dataset = dataset.MNIST(data_dir='../data/train.tar', apply_augumentation = True)
-    #test_aug_dataset = dataset.MNIST(data_dir='../data/test.tar', apply_augumentation = True)
 
     
     # Instantiate DataLoaders for training and testing
@@ -223,7 +218,7 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     optimizer = optim.SGD
     criterion = nn.CrossEntropyLoss()
-    num_epochs = 25
+    num_epochs = 40
 
     # Train and test with LeNet5
     model_configs = [

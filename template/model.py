@@ -40,9 +40,6 @@ class LeNet5(nn.Module):
 
     def forward(self, img):
         features = self.features(img)
-        #features = features.view(features.size(0), -1)
-        #if self.dropout is not None:  
-        #    features = self.dropout(features)  # Apply dropout here
         output = self.classifier(features)
 
         return output
