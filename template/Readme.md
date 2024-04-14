@@ -51,6 +51,7 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
     5. (Report) Compare the predictive performances of LeNet-5 and your custom MLP. 
         Also, make sure that the accuracy of LeNet-5 (your implementation) is similar to the known accuracy. 
         
+        ## LeNet and CustomMLP model Accurarcy each
         LeNet-5 Test Accruacy: Test Acc: 0.9901
         CustomMLP Test Accruacy: Test Acc: 0.9789
         
@@ -61,14 +62,13 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
         Keep in mind that when you employ the data augmentation technique, 
         it should be applied only to training data. So, the modification of provided `MNIST` class in `dataset.py` may be needed.
         
-        ![Report]
+
         The weight decay 0.01 and dropout rate 0.5 are used as regularization methods in this model. 
         The data has been augumented with the 
         Kindly compare the two models performance below
         
-        ![LeNet_Accuracy_plot](../img/LeNet_accuracy_plot.png)
-        ![LeNet_loss_plot](../img/LeNet_loss_plot.png)
         
+        ## Lenet_regularization model performance
         Test Loss: 0.0006, Test Acc: 0.9733
         ![LeNet_regularization_Accuracy_plot](../img/LeNet_regularization_accuracy_plot.png)
         ![LeNet_regularization_Loss_plot](../img/LeNet_regularization_loss_plot.png)
