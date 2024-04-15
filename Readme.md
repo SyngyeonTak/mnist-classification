@@ -67,9 +67,5 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
         
         
         Test Loss: 0.0039, Test Acc: 0.9829
-![LeNet_regularization_Accuracy_plot](../img/LeNet_regularization_accuracy_plot.png)
-![LeNet_regularization_Loss_plot](../img/LeNet_regularization_loss_plot.png)
-        
-        Test Loss: 0.0006, Test Acc: 0.9733
 ![LeNet_regularization_Accuracy_plot](img/LeNet_regularization_accuracy_plot.png)
 ![LeNet_regularization_Loss_plot](img/LeNet_regularization_loss_plot.png)
