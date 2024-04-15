@@ -152,6 +152,9 @@ def train_and_test(model, applied_train_loader, applied_test_loader, device, cri
     return train_loss_history, train_acc_history, test_loss_history, test_acc_history
 
 def plot_performance(train_loss_history, train_acc_history, test_loss_history, test_acc_history, model_name):
+    current_path = os.getcwd()
+    print('current_path: ', current_path)
+
     epochs = range(1, len(train_loss_history) + 1)
 
     print('epochs: ', epochs)
@@ -222,9 +225,9 @@ def main():
 
     # Train and test with LeNet5
     model_configs = [
-        {"model": LeNet5(dropout=False), "optimizer_params": {"lr": 0.01, "momentum": 0.9}, "model_name": "LeNet"},
+        #{"model": LeNet5(dropout=False), "optimizer_params": {"lr": 0.01, "momentum": 0.9}, "model_name": "LeNet"},
         {"model": LeNet5(dropout=True), "optimizer_params": {"lr": 0.01, "momentum": 0.9, "weight_decay": 0.01}, "model_name": "LeNet_regularization"}, #  regularization 2  - Weight Decay and Dropout
-        {"model": CustomMLP(), "optimizer_params": {"lr": 0.01, "momentum": 0.9}, "model_name": "CustomMLP"}
+        #{"model": CustomMLP(), "optimizer_params": {"lr": 0.01, "momentum": 0.9}, "model_name": "CustomMLP"}
     ]
 
 

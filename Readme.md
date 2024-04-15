@@ -50,7 +50,7 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
         Also, make sure that the accuracy of LeNet-5 (your implementation) is similar to the known accuracy. 
         
         
-        LeNet-5 Test Accuracy: 0.9901
+        LeNet-5 Test Accuracy: 0.9897
         CustomMLP Test Accuracy: 0.9789
         
 ## Lenet_regularization model performance
@@ -62,11 +62,10 @@ In this assignment, you build a neural network classifier with MNIST dataset. Fo
         
 
         The weight decay 0.01 and dropout rate 0.5 are used as regularization methods in this model. 
-        The data has been augumented with the 
-        Kindly compare the two models performance below
+        The data has been augumented with the RandomAffine method
+        Be noted of the model performance below
         
         
-        
-        Test Loss: 0.0006, Test Acc: 0.9733
+        Test Loss: 0.0039, Test Acc: 0.9829
 ![LeNet_regularization_Accuracy_plot](../img/LeNet_regularization_accuracy_plot.png)
 ![LeNet_regularization_Loss_plot](../img/LeNet_regularization_loss_plot.png)
